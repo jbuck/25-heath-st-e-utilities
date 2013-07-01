@@ -21,6 +21,26 @@
             formatter: function() {
               return Highcharts.dateFormat('%b %Y', this.value);
             }
+          },
+          tickPositioner: function() {
+            var ticks = [
+              Date.UTC(2012, 4, 1),
+              Date.UTC(2012, 5, 1),
+              Date.UTC(2012, 6, 1),
+              Date.UTC(2012, 7, 1),
+              Date.UTC(2012, 8, 1),
+              Date.UTC(2012, 9, 1),
+              Date.UTC(2012, 10, 1),
+              Date.UTC(2012, 11, 1),
+              Date.UTC(2013, 0, 1),
+              Date.UTC(2013, 1, 1),
+              Date.UTC(2013, 2, 1),
+              Date.UTC(2013, 3, 1),
+              Date.UTC(2013, 4, 1),
+              Date.UTC(2013, 5, 1)
+            ];
+
+            return ticks;
           }
         },
         yAxis: {
