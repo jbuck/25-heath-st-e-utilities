@@ -17,9 +17,10 @@
         },
         xAxis: {
           type: "datatime",
-          dateTimeLabelFormats: {
-            month: "%b",
-            year: "%Y"
+          labels: {
+            formatter: function() {
+              return Highcharts.dateFormat('%b %Y', this.value);
+            }
           }
         },
         yAxis: {
