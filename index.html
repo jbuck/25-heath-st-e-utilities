@@ -19,11 +19,12 @@
           type: "datetime",
           labels: {
             formatter: function() {
-              return Highcharts.dateFormat('%b<br>%Y', this.value);
+              return Highcharts.dateFormat('%b<br>\'%y', this.value);
             }
           },
           tickPositioner: function() {
             var ticks = [
+              Date.UTC(2012, 3, 1),
               Date.UTC(2012, 4, 1),
               Date.UTC(2012, 5, 1),
               Date.UTC(2012, 6, 1),
@@ -79,7 +80,7 @@
           }
         },
         series: [{
-          name: "Enbridge",
+          name: "Enbridge (Gas)",
           data: [
             [Date.UTC(2012, 3, 1), 154.27],
             [Date.UTC(2012, 4, 1), 25.59],
@@ -113,7 +114,7 @@
             [Date.UTC(2014, 8, 1), 49.89],
           ]
         }, {
-          name: "Toronto Hydro",
+          name: "Toronto Hydro (Electricity)",
           data: [
             [Date.UTC(2012, 4, 1), 130.07],
             [Date.UTC(2012, 6, 1), 166.69],
@@ -132,7 +133,7 @@
             [Date.UTC(2014, 8, 1), 193.54],
           ]
         }, {
-          name: "City of Toronto",
+          name: "City of Toronto (Water)",
           data: [
             [Date.UTC(2012, 4, 1), 73.69],
             [Date.UTC(2012, 6, 1), 200.88],
