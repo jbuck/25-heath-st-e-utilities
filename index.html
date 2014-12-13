@@ -19,7 +19,7 @@
           type: "datetime",
           labels: {
             formatter: function() {
-              return Highcharts.dateFormat('%b %Y', this.value);
+              return Highcharts.dateFormat('%b<br>%Y', this.value);
             }
           },
           tickPositioner: function() {
@@ -37,7 +37,25 @@
               Date.UTC(2013, 2, 1),
               Date.UTC(2013, 3, 1),
               Date.UTC(2013, 4, 1),
-              Date.UTC(2013, 5, 1)
+              Date.UTC(2013, 5, 1),
+              Date.UTC(2013, 6, 1),
+              Date.UTC(2013, 7, 1),
+              Date.UTC(2013, 8, 1),
+              Date.UTC(2013, 9, 1),
+              Date.UTC(2013, 10, 1),
+              Date.UTC(2013, 11, 1),
+              Date.UTC(2014, 0, 1),
+              Date.UTC(2014, 1, 1),
+              Date.UTC(2014, 2, 1),
+              Date.UTC(2014, 3, 1),
+              Date.UTC(2014, 4, 1),
+              Date.UTC(2014, 5, 1),
+              Date.UTC(2014, 6, 1),
+              Date.UTC(2014, 7, 1),
+              Date.UTC(2014, 8, 1),
+              Date.UTC(2014, 9, 1),
+              Date.UTC(2014, 10, 1),
+              Date.UTC(2014, 11, 1),
             ];
 
             return ticks;
@@ -77,26 +95,53 @@
             [Date.UTC(2013, 3, 1), 255.63],
             [Date.UTC(2013, 4, 1), 134.95],
             [Date.UTC(2013, 5, 1), 99.91],
+            [Date.UTC(2013, 6, 1), 53.68],
+            [Date.UTC(2013, 7, 1), 39.62],
+            [Date.UTC(2013, 8, 1), 45.09],
+            [Date.UTC(2013, 9, 1), 80.59],
+            [Date.UTC(2013, 10, 1), 151.45],
+            [Date.UTC(2013, 11, 1), 226.71],
+            [Date.UTC(2014, 0, 1), 316.56],
+            [Date.UTC(2014, 1, 1), 313.41],
+            [Date.UTC(2014, 2, 1), 282.56],
+            [Date.UTC(2014, 3, 1), 185.83],
+            [Date.UTC(2014, 4, 1), 130.11],
+            [Date.UTC(2014, 5, 1), 60.96],
+            [Date.UTC(2014, 6, 1), 42.60],
+            [Date.UTC(2014, 7, 1), 52.48],
+            [Date.UTC(2014, 8, 1), 49.89],
           ]
         }, {
           name: "Toronto Hydro",
           data: [
-            [Date.UTC(2012, 5, 1), 130.07],
-            [Date.UTC(2012, 7, 1), 166.69],
-            [Date.UTC(2012, 9, 1), 176.22],
-            [Date.UTC(2012, 11, 1), 170.23],
-            [Date.UTC(2013, 1, 1), 168.97],
-            [Date.UTC(2013, 3, 1), 148.22],
-            [Date.UTC(2013, 5, 1), 161.46],
+            [Date.UTC(2012, 4, 1), 130.07],
+            [Date.UTC(2012, 6, 1), 166.69],
+            [Date.UTC(2012, 8, 1), 176.22],
+            [Date.UTC(2012, 10, 1), 170.23],
+            [Date.UTC(2013, 0, 1), 168.97],
+            [Date.UTC(2013, 2, 1), 148.22],
+            [Date.UTC(2013, 4, 1), 161.46],
+            [Date.UTC(2013, 6, 1), 181.92],
+            [Date.UTC(2013, 8, 1), 162.76],
+            [Date.UTC(2013, 10, 1), 168.96],
+            [Date.UTC(2014, 0, 1), 204.98],
+            [Date.UTC(2014, 2, 1), 164.71],
+            [Date.UTC(2014, 4, 1), 185.87],
+            [Date.UTC(2014, 6, 1), 181.62],
+            [Date.UTC(2014, 8, 1), 193.54],
           ]
         }, {
           name: "City of Toronto",
           data: [
-            [Date.UTC(2012, 5, 1), 73.69],
-            [Date.UTC(2012, 8, 1), 200.88],
-            [Date.UTC(2012, 9, 1), 102.10],
-            [Date.UTC(2013, 1, 1), 313.99],
-            [Date.UTC(2013, 5, 1), 229.26],
+            //[Date.UTC(2012, 5, 1), 73.69],
+            //[Date.UTC(2012, 8, 1), 200.88],
+            //[Date.UTC(2012, 9, 1), 102.10],
+            [Date.UTC(2013, 0, 1), 313.99],
+            [Date.UTC(2013, 4, 1), 229.26],
+            [Date.UTC(2013, 8, 1), 267.35],
+            [Date.UTC(2014, 0, 1), 290.26],
+            [Date.UTC(2014, 4, 1), 277.30],
+            [Date.UTC(2014, 8, 1), 269.87],
           ]
         }]
       });
