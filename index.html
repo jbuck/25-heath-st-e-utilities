@@ -10,7 +10,10 @@
     <script>
       $("#container").highcharts({
         chart: {
-          type: "line"
+          type: "line",
+          panning: true,
+          panKey: "shift",
+          zoomType: "x",
         },
         title: {
           text: "Cost of Utilities for 25 Heath St E"
